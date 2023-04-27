@@ -9,7 +9,7 @@ export const options = {
 }; 
 
 export default function() { 
-    constres = http.get('http://your-loadBalancer-url-here/api/v1/todos');
+    const res = http.get('http://44.206.37.103/api/v1/todos');
     check(res, {'status was 200': (r) => r.status == 200});
     sleep(1);
 }
